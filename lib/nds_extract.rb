@@ -77,7 +77,6 @@ def movies_with_directors_set(source)
     new_array << movies_with_director_key(name, movies)
     index += 1
   end
-  binding.pry
   new_array
 end
 
