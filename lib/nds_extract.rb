@@ -86,6 +86,7 @@ def movies_with_directors_set(source)
     movies = source[index][:movies]
     new_array << movies_with_director_key(name, movies)
     index += 1
+    binding.pry
   end
   new_array
 
@@ -98,6 +99,5 @@ end
 def studios_totals(nds)
   a_o_a_movies_with_director_names = movies_with_directors_set(nds)
   movies_with_director_names = flatten_a_o_a(a_o_a_movies_with_director_names)
-  binding.pry
   return gross_per_studio(movies_with_director_names)
 end
