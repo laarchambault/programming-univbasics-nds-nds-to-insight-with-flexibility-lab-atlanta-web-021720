@@ -44,6 +44,7 @@ def movies_with_director_key(name, movies_collection)
     dir_mov_array << movie_with_director_name(name, movies_collection[0])
     
     index += 1
+    binding.pry
   end
   dir_mov_array
 end
@@ -75,7 +76,6 @@ def movies_with_directors_set(source)
     name = source[index][:name]
     movies = source[index][:movies]
     new_array << movies_with_director_key(name, movies)
-    binding.pry
     index += 1
   end
   new_array
