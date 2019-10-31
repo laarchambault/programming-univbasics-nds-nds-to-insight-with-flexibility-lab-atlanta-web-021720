@@ -1,15 +1,5 @@
 # Provided, don't edit
-  # GOAL: Given an Array of Hashes where each Hash represents a movie,
-  # return a Hash that includes the total worldwide_gross of all the movies from
-  # each studio.
-  #
-  # INPUT:
-  # * collection: Array of Hashes where each Hash where each Hash represents a movie
-  #
-  # RETURN:
-  #
-  # Hash whose keys are the studio names and whose values are the sum
-  # total of all the worldwide_gross numbers for every movie in the input Hash
+
 require 'directors_database'
 require 'pry'
 # A method we're giving you. This "flattens"  Arrays of Arrays so: [[1,2],
@@ -88,7 +78,7 @@ def movies_with_directors_set(source)
     
     while inner_index < movies.length do
     
-    new_array << movies_with_director_key(name, movies[inner_index])
+    new_array << movies_with_director_key(name, movies[inner_index][:title])
     inner_index += 1
     end
     index += 1
