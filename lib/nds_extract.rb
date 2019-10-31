@@ -76,12 +76,9 @@ def movies_with_directors_set(source)
     movies = source[index][:movies]
     binding.pry
     new_array << movies_with_director_key(name, movies)
-    inner_index += 1
-    end
     index += 1
   end
   new_array
-
 end
 
 # ----------------    End of Your Code Region --------------------
