@@ -80,6 +80,7 @@ def movies_with_directors_set(source)
     
     new_array << movies_with_director_key(name, movies[inner_index][:title])
     inner_index += 1
+    binding.pry
     end
     index += 1
   end
